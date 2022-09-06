@@ -42,7 +42,7 @@ We will use this [Weather API](https://vejr.eu/pages/api-documentation) in this 
 
 ## Exercise 4: Fetch API data in Java
 
-1. Check the Main class and run the main method. Notice what is happening, and how the fetched JSON string is converted to a DTO.
+1. Check the Main class and run the main methods. Notice what is happening, and how the fetched JSON string is converted to a DTO.
 2. 
 
 

@@ -9,7 +9,7 @@ import java.net.http.HttpResponse;
 public class HttpUtils
 {
 
-    public static String fetchAPIData(String _url)
+    public static String fetchAPIData(String _url, String apikey)
     {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -17,6 +17,7 @@ public class HttpUtils
                 .GET()
                 .header("Accept", "application/json")
                 .header("User-Agent", "server")
+                .header("app-id", apikey)
                 .build();
         try
         {

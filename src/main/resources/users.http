@@ -6,7 +6,7 @@ Accept: application/json
 app-id:
 
 ### GET specific user
-GET https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109ca
+GET https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109cb
 Accept: application/json
 app-id:
 
