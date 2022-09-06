@@ -3,17 +3,17 @@
 ### GET request with a header (all users)
 GET https://dummyapi.io/data/v1/user
 Accept: application/json
-app-id: 63174ee165bb0b2aa17b0119
+app-id:
 
 ### GET specific user
 GET https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109ca
 Accept: application/json
-app-id: 63174ee165bb0b2aa17b0119
+app-id:
 
 ### POST new user
 POST https://dummyapi.io/data/v1/user/create
 Content-Type: application/json
-app-id: 63174ee165bb0b2aa17b0119
+app-id:
 
 {
   "title": "mr",
@@ -36,7 +36,7 @@ app-id: 63174ee165bb0b2aa17b0119
 ### Update new user
 PUT https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109ca
 Content-Type: application/json
-app-id: 63174ee165bb0b2aa17b0119
+app-id:
 
 {
   "lastName": "Olsen"
@@ -45,7 +45,7 @@ app-id: 63174ee165bb0b2aa17b0119
 ### Delete user
 DELETE https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109da
 Content-Type: application/json
-app-id: 63174ee165bb0b2aa17b0119
+app-id:
 
 
 
