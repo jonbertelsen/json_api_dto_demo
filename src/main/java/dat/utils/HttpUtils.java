@@ -17,7 +17,7 @@ public class HttpUtils
                 .GET()
                 .header("Accept", "application/json")
                 .header("User-Agent", "server")
-                .header("app-id", apikey)
+                .header(apikey != null ? "app-id" : null, apikey != null ? apikey : "")
                 .build();
         try
         {
@@ -25,11 +25,7 @@ public class HttpUtils
                     client.send(request, HttpResponse.BodyHandlers.ofString());
             return response.body();
         }
-        catch (IOException e)
-        {
-            throw new RuntimeException(e);
-        }
-        catch (InterruptedException e)
+        catch (IOException | InterruptedException e)
         {
             throw new RuntimeException(e);
         }

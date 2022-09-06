@@ -6,8 +6,15 @@ Create a JSON string with the following data:
 - Svend Hansen, Ahlgade 45, 4300 Holbæk, Tlf: 53433434
 - Ole Carlsen, Østerbrogade 23, 2100 Kbh Ø, Tlf: 21323223
 
-## Exercise 2: DTO from JSON
-Create a DTO from JSON
+## Exercise 2: DTO from JSON part I:
+1. Create a DTO from the JSON above to hold one person (call it PersonDTO)
+2. Create a DTO called PersonsDTO that can hold a list of PersonDTOs.
+3. Use GSON to convert your JSON string to real Java objects
+
+NB! You can find the [JSON syntax here](https://www.json.org/json-en.html)
+
+## Exercise 3: DTO from the JSON part II:
+Create a DTO from the JSON snippet below:
 
 We have received some weatherdata in JSON format as given below:
 ````json
@@ -23,8 +30,9 @@ We have received some weatherdata in JSON format as given below:
 ````
 
 Create a DTO called WeatherDTO in Java that can hold the data.
+Hint! The WeatherDTO will have a CurrentDataDTO object as an attribute.
 
-## Exercise 3: Run test-api calls
+## Exercise 4: Run test-api calls
 We will use this [User fake API](https://dummyapi.io/) in this exercise.
 
 1. Navigate to the page and sign up with your GitHub account and get an API key.
@@ -33,22 +41,16 @@ We will use this [User fake API](https://dummyapi.io/) in this exercise.
 4. Update your info in some way.
 5. Pay attention to the http-headers.
 
-## Exercise 4: Run more test-api calls
+## Exercise 5: Run more test-api calls
 We will use this [Weather API](https://vejr.eu/pages/api-documentation) in this exercise. Check the documentation.
 
 1. Try to find the weather in `Ringsted` by entering the correct api-url in your browser.
-2. Open the `weather.http` file in the resources folder.
+2. Open the `weather.http` file in the `resources` folder.
 3. Run the api call there.
 
-## Exercise 4: Fetch API data in Java
+## Exercise 6: Fetch API data in Java
 
 1. Check the Main class and run the main methods. Notice what is happening, and how the fetched JSON string is converted to a DTO.
-2. 
-
-
-
-- Run the main method in Main to fetch weather data and print out in various formats
-- Notice how the fetched string with JSON is converted with GSON to a WeatherDTO
 
 ## API links
 
