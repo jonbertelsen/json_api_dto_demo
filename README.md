@@ -14,7 +14,7 @@ Create a JSON string with the following data:
 NB! You can find the [JSON syntax here](https://www.json.org/json-en.html)
 
 ## Exercise 3: DTO from the JSON part II:
-Create a DTO from the JSON snippet below:
+1. Create a DTO from the JSON snippet below:
 
 We have received some weatherdata in JSON format as given below:
 ````json
@@ -28,9 +28,9 @@ We have received some weatherdata in JSON format as given below:
   "LocationName": "Roskilde, Sjælland"
 }
 ````
-
-Create a DTO called WeatherDTO in Java that can hold the data.
-Hint! The WeatherDTO will have a CurrentDataDTO object as an attribute.
+Hint! Create a DTO called WeatherDTO in Java that can hold the data.
+The WeatherDTO will have a CurrentDataDTO object as an attribute.
+2. Use Gson to convert the JSON snippet to your DTO.
 
 ## Exercise 4: Run test-api calls
 We will use this [User fake API](https://dummyapi.io/) in this exercise.
