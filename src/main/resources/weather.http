@@ -1,0 +1,13 @@
+### Vejr for Roskilde
+GET https://vejr.eu/api.php?location=Roskilde&degree=C
+Accept: application/json
+User-Agent: server
+
+
+
+
+
+
+
+
+

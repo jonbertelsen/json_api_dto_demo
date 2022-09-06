@@ -1,0 +1,51 @@
+### https://dummyapi.io/docs/user
+
+### GET request with a header (all users)
+GET https://dummyapi.io/data/v1/user
+Accept: application/json
+app-id: 63174ee165bb0b2aa17b0119
+
+### GET specific user
+GET https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109ca
+Accept: application/json
+app-id: 63174ee165bb0b2aa17b0119
+
+### POST new user
+POST https://dummyapi.io/data/v1/user/create
+Content-Type: application/json
+app-id: 63174ee165bb0b2aa17b0119
+
+{
+  "title": "mr",
+  "firstName": "Jon",
+  "lastName": "Bertelsen",
+  "picture": "https://randomuser.me/api/portraits/man/58.jpg",
+  "gender": "male",
+  "email": "jon@jon.dk",
+  "dateOfBirth": "1970-04-30T19:26:49.610Z",
+  "phone": "34554334",
+  "location": {
+    "street": "Nordre Frihavnsgade",
+    "city": "København",
+    "state": "København",
+    "country": "Denmark",
+    "timezone": "0:00"
+  }
+}
+
+### Update new user
+PUT https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109ca
+Content-Type: application/json
+app-id: 63174ee165bb0b2aa17b0119
+
+{
+  "lastName": "Olsen"
+}
+
+### Delete user
+DELETE https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109da
+Content-Type: application/json
+app-id: 63174ee165bb0b2aa17b0119
+
+
+
