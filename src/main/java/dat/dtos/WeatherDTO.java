@@ -1,12 +1,10 @@
 package dat.dtos;
 
-public class WeatherDTO
-{
-    private CurrentDataDTO CurrentData;
-    private String LocationName;
+public class WeatherDTO {
+    private final CurrentDataDTO CurrentData;
+    private final String LocationName;
 
-    public WeatherDTO(CurrentDataDTO currentData, String locationName)
-    {
+    public WeatherDTO(CurrentDataDTO currentData, String locationName) {
         CurrentData = currentData;
         LocationName = locationName;
     }
@@ -20,8 +18,7 @@ public class WeatherDTO
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "WeatherDTO{" +
                 "CurrentData=" + CurrentData +
                 ", LocationName='" + LocationName + '\'' +

@@ -3,30 +3,30 @@
 ### GET request with a header (all users)
 GET https://dummyapi.io/data/v1/user
 Accept: application/json
-app-id:
+app-id: 63174ee165bb0b2aa17b0119
 
 ### GET specific user
 GET https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109cb
 Accept: application/json
-app-id:
+app-id: 63174ee165bb0b2aa17b0119
 
 ### POST new user
 POST https://dummyapi.io/data/v1/user/create
 Content-Type: application/json
-app-id:
+app-id: 63174ee165bb0b2aa17b0119
 
 {
   "title": "mr",
-  "firstName": "Jon",
-  "lastName": "Bertelsen",
+  "firstName": "Joerg",
+  "lastName": "Oertel",
   "picture": "https://randomuser.me/api/portraits/man/58.jpg",
   "gender": "male",
-  "email": "jon@jon.dk",
-  "dateOfBirth": "1970-04-30T19:26:49.610Z",
-  "phone": "34554334",
+  "email": "joerg@joerg.dk",
+  "dateOfBirth": "1977-04-30T19:26:49.610Z",
+  "phone": "3452334",
   "location": {
-    "street": "Nordre Frihavnsgade",
-    "city": "København",
+    "street": "Strøget",
+    "city": "Lyngby",
     "state": "København",
     "country": "Denmark",
     "timezone": "0:00"
@@ -34,18 +34,18 @@ app-id:
 }
 
 ### Update new user
-PUT https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109ca
+PUT https://dummyapi.io/data/v1/user/63179e96bb6ebb4b66733b07
 Content-Type: application/json
-app-id:
+app-id: 63174ee165bb0b2aa17b0119
 
 {
   "lastName": "Olsen"
 }
 
 ### Delete user
-DELETE https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109da
+DELETE https://dummyapi.io/data/v1/user/63179e96bb6ebb4b66733b07
 Content-Type: application/json
-app-id:
+app-id: 63174ee165bb0b2aa17b0119
 
 
 

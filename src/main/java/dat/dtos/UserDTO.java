@@ -1,15 +1,13 @@
 package dat.dtos;
 
-public class UserDTO
-{
+public class UserDTO {
     String id;
     String title;
     String firstName;
     String lastName;
     String picture;
 
-    public UserDTO(String id, String title, String firstName, String lastName, String picture)
-    {
+    public UserDTO(String id, String title, String firstName, String lastName, String picture) {
         this.id = id;
         this.title = title;
         this.firstName = firstName;
@@ -18,8 +16,7 @@ public class UserDTO
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "UserDTO{" +
                 "id='" + id + '\'' +
                 ", title='" + title + '\'' +

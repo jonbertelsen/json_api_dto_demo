@@ -1,14 +1,12 @@
 package dat.dtos;
 
-public class CurrentDataDTO
-{
-        private Integer temperature;
-        private Integer humidity;
-        private String skyText;
-        private String windText;
+public class CurrentDataDTO {
+    private Integer temperature;
+    private final Integer humidity;
+    private final String skyText;
+    private final String windText;
 
-    public CurrentDataDTO(Integer temperature, Integer humidity, String skyText, String windText)
-    {
+    public CurrentDataDTO(Integer temperature, Integer humidity, String skyText, String windText) {
         this.temperature = temperature;
         this.humidity = humidity;
         this.skyText = skyText;
@@ -16,28 +14,27 @@ public class CurrentDataDTO
     }
 
     public Integer getTemperature() {
-            return temperature;
-        }
+        return temperature;
+    }
 
-        public void setTemperature(Integer temperature) {
-            this.temperature = temperature;
-        }
+    public void setTemperature(Integer temperature) {
+        this.temperature = temperature;
+    }
 
-        public Integer getHumidity() {
-            return humidity;
-        }
+    public Integer getHumidity() {
+        return humidity;
+    }
 
-        public String getSkyText() {
-            return skyText;
-        }
+    public String getSkyText() {
+        return skyText;
+    }
 
-        public String getWindText() {
-            return windText;
-        }
+    public String getWindText() {
+        return windText;
+    }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "CurrentDataDTO{" +
                 "temperature=" + temperature +
                 ", humidity=" + humidity +
