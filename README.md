@@ -57,9 +57,10 @@ We will use this [Weather API](https://vejr.eu/pages/api-documentation) in this 
 - [Weather](https://vejr.eu/pages/api-documentation)
 - [User fake API](https://dummyapi.io/). Sign up with GitHub and get API key
 
-## Nice link when you get an experienced DTO builder 
+## Nice links when you get an experienced DTO builder 
 
 - [JSON to Java converter](https://instantwebtools.net/json-to-java)
+- [Another JSON to Java converter](https://jsonformatter.org/json-to-java)
 
 ## Snippets
 
