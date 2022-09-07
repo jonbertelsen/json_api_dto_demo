@@ -61,4 +61,23 @@ We will use this [Weather API](https://vejr.eu/pages/api-documentation) in this 
 
 - [JSON to Java converter](https://instantwebtools.net/json-to-java)
 
+## Snippets
+
+### GSON
+
+````java
+// Gson instantiation with pretty printing
+private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
+````
+
+````xml
+<dependencies>
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.8.6</version>
+    </dependency>
+</dependencies>
+````
+
 
