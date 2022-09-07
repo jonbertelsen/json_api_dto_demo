@@ -17,7 +17,7 @@ public class HttpUtils
                 .GET()
                 .header("Accept", "application/json")
                 .header("User-Agent", "server")
-                .header(apikey != null ? "app-id" : null, apikey != null ? apikey : "")
+                .header(apikey != null ? "app-id" : "null", apikey != null ? apikey : "null")
                 .build();
         try
         {
