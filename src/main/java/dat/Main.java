@@ -12,16 +12,17 @@ public class Main
 
     public static void main(String[] args)
     {
-        weatherAPI();
-        //userAPI();
+        //weatherAPI();
+        userAPI();
 
     }
 
     public static void userAPI()
     {
         System.out.println("Hello USER REST API");
-        String json = HttpUtils.fetchAPIData("https://dummyapi.io/data/v1/user", "63174ee165bb0b2aa17b0119");
+        String json = HttpUtils.fetchAPIData("https://dummyapi.io/data/v1/user", "6318370b8733824e8402f913");
         UsersDTO usersDTO = gson.fromJson(json, UsersDTO.class);
+        System.out.println(usersDTO);
         System.out.println(gson.toJson(usersDTO));
     }
 

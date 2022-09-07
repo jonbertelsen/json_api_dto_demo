@@ -3,30 +3,30 @@
 ### GET request with a header (all users)
 GET https://dummyapi.io/data/v1/user
 Accept: application/json
-app-id:
+app-id: 6318370b8733824e8402f913
 
 ### GET specific user
-GET https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109cb
+GET https://dummyapi.io/data/v1/user/6318573a531c340da33823d7
 Accept: application/json
-app-id:
+app-id: 6318370b8733824e8402f913
 
 ### POST new user
 POST https://dummyapi.io/data/v1/user/create
 Content-Type: application/json
-app-id:
+app-id: 6318370b8733824e8402f913
 
 {
   "title": "mr",
-  "firstName": "Jon",
-  "lastName": "Bertelsen",
+  "firstName": "Joerg",
+  "lastName": "Oertel",
   "picture": "https://randomuser.me/api/portraits/man/58.jpg",
   "gender": "male",
-  "email": "jon@jon.dk",
+  "email": "joerg@joerg.dk",
   "dateOfBirth": "1970-04-30T19:26:49.610Z",
   "phone": "34554334",
   "location": {
-    "street": "Nordre Frihavnsgade",
-    "city": "København",
+    "street": "strøget",
+    "city": "Lyngby",
     "state": "København",
     "country": "Denmark",
     "timezone": "0:00"
@@ -34,18 +34,26 @@ app-id:
 }
 
 ### Update new user
-PUT https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109ca
+PUT https://dummyapi.io/data/v1/user/6318573a531c340da33823d7
 Content-Type: application/json
-app-id:
+app-id: 6318370b8733824e8402f913
 
 {
-  "lastName": "Olsen"
+  "location": {
+    "street": "strøget",
+    "city": "Lyngby",
+    "state": "Rønne",
+    "country": "Denmark",
+    "timezone": "0:00",
+    "test": "test"
+  }
+
 }
 
 ### Delete user
-DELETE https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109da
+DELETE https://dummyapi.io/data/v1/user/6318370b8733824e8402f913
 Content-Type: application/json
-app-id:
+app-id: 6318573a531c340da33823d7
 
 
 
