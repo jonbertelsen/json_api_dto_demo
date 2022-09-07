@@ -28,7 +28,7 @@ public class Main
     public static void weatherAPI()
     {
         System.out.println("Hello REST API weather");
-        String json = HttpUtils.fetchAPIData("https://vejr.eu/api.php?location=Roskilde&degree=C","");
+        String json = HttpUtils.fetchAPIData("https://vejr.eu/api.php?location=Roskilde&degree=C",null);
         WeatherDTO weatherDTO = gson.fromJson(json, WeatherDTO.class);
         System.out.println(gson.toJson(weatherDTO));
      }
